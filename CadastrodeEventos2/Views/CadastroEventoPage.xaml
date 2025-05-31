@@ -3,13 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CadastrodeEventos2.Views.CadastroEventoPage"
              Title="CadastroEventoPage">
+    
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
             <Entry Placeholder="Nome do Evento" Text="{Binding Nome}" />
+            
             <DatePicker Date="{Binding DataInicio}" />
+            
             <DatePicker Date="{Binding DataFim}" />
+            
             <Entry Placeholder="Número de Participantes" Keyboard="Numeric" Text="{Binding NumeroParticipantes}" />
+            
             <Entry Placeholder="Local do Evento" Text="{Binding Local}" />
+            
             <Entry Placeholder="Custo por Participante" Keyboard="Numeric" Text="{Binding CustoPorParticipante}" />
 
             <Button Text="Cadastrar" Clicked="OnCadastrarClicked" />
